@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs - E-Commerce</title>
+  <!-- Link to Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #fff;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .question-container {
+      text-align: left;
+    }
+    .question {
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      background-color: #f5f5f5;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: background-color 0.2s;
+    }
+    .question:hover {
+      background-color: #e0e0e0;
+    }
+    .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+    .icon {
+      font-size: 1rem;
+    }
+    /* Toggle answer display when input is checked */
+    .question:focus + .card .answer {
+      max-height: 1000px; /* Adjust this value as needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-4 mb-4">
+    <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+    <div class="accordion" id="faqAccordion">
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+          <span class="icon">&#9658;</span> How do I place an order?
+        </button>
+        <div class="collapse card" id="faqCollapse1">
+          <div class="card-body answer">
+            Placing an order is easy. Simply browse our products, add items to your cart, and proceed to checkout. Follow the steps to provide your  payment information, and your order will be confirmed.
+          </div>
+        </div>
+      </div>
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+          <span class="icon">&#9658;</span> Can I track my order?
+        </button>
+        <div class="collapse card" id="faqCollapse2">
+          <div class="card-body answer">
+            Yes, you can track your order. Once your order is confirmed, you will receive a tracking number via email. You can use this tracking number to monitor the status and location of your package.
+          </div>
+        </div>
+      </div>
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+          <span class="icon">&#9658;</span> What payment methods do you accept?
+        </button>
+        <div class="collapse card" id="faqCollapse3">
+          <div class="card-body answer">
+            We accept a variety of payment methods, including credit cards (Visa, MasterCard), PayPal, and Mpesa. You can choose the most convenient option for you during checkout.
+          </div>
+        </div>
+      </div>
+      <!-- Add more FAQ items here -->
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+          <span class="icon">&#9658;</span> How long does shipping take?
+        </button>
+        <div class="collapse card" id="faqCollapse4">
+          <div class="card-body answer">
+            Shipping times vary depending on your location and the shipping method you choose at checkout. Generally, orders are processed and shipped within 1-2 business days. You can view estimated delivery times during the checkout process.
+          </div>
+        </div>
+      </div>
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+          <span class="icon">&#9658;</span> What is your return policy?
+        </button>
+        <div class="collapse card" id="faqCollapse5">
+          <div class="card-body answer">
+            We offer a hassle-free return policy. If you're not satisfied with your purchase, you can return the item within 30 days of receipt for a full refund or exchange. 
+          </div>
+        </div>
+      </div>
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+          <span class="icon">&#9658;</span> Is my personal information secure?
+        </button>
+        <div class="collapse card" id="faqCollapse6">
+          <div class="card-body answer">
+            Yes, we take the security of your personal information seriously. We use advanced encryption and security measures to protect your data. Your payment information is processed securely, and we do not share your information with third parties.
+          </div>
+        </div>
+      </div>
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse7" aria-expanded="false" aria-controls="faqCollapse7">
+          <span class="icon">&#9658;</span> Do you offer international shipping?
+        </button>
+        <div class="collapse card" id="faqCollapse7">
+          <div class="card-body answer">
+            No, We are yet to implement that in our company.
+          </div>
+        </div>
+      </div>
+      <div class="question-container">
+        <button class="btn btn-link question" type="button" data-toggle="collapse" data-target="#faqCollapse8" aria-expanded="false" aria-controls="faqCollapse8">
+          <span class="icon">&#9658;</span> How can I contact customer support?
+        </button>
+        <div class="collapse card" id="faqCollapse8">
+          <div class="card-body answer">
+            You can reach our customer support team by clicking the "Contact Us" link on our website or by sending an email to support@example.com. We are available to assist you with any questions or concerns you may have.
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+            <a href="index.php" class="btn btn-primary">Back</a>
+    </div>
+</div>
+  </div>
+
+  <!-- Link to Bootstrap JS and jQuery (for accordion functionality) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
